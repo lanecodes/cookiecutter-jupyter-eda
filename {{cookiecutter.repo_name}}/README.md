@@ -34,8 +34,9 @@ pip install -e .
 
 This will install the local Python package in the Python environment currently
 active in your shell. Note that the use of the `-e` flag means you can make
-changes to the code in `./src` and these will be reflected in any notebooks using
-it following a `reload` of the import, without needing to reinstall the package.
+changes to the code in `./{{cookiecutter.repo_name}}` and these will be reflected
+in any notebooks using it following a `reload` of the import, without needing to
+reinstall the package.
 
 ## Project structure
 
@@ -52,7 +53,7 @@ it following a `reload` of the import, without needing to reinstall the package.
 ├── reports
 │   └── figures
 ├── setup.py
-└── src                        <- Python modules specific to this project
+└── {{cookiecutter.repo_name}}          <- Python modules specific to this project
     ├── config.py              <- Project configuration code
     └── __init__.py
 ```

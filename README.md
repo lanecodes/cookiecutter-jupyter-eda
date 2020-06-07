@@ -12,7 +12,7 @@ Similar to [Cookiecutter Data Science][ccutter-ds] with the following difference
   environment (rather than `requirements.txt`) for the project. This makes the
   analysis more portable by helping others recreate the development environment.
 - Adds a local Python package to the created environment which provides an
-  abstraction to access data directories, e.g. `from src import DATA_PATHS; print(DATA_PATHS.raw)`.
+  abstraction to access data directories, e.g. `from <repo_name> import DATA_PATHS; print(DATA_PATHS.raw)`.
   This can also act as a stub from which a more developed package for the
   project can grow, easing refactoring of code out of notebooks into 
   well-organised modules.
